@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website ini merupakan website Khitan Arvin Zahair Ramadhan yang akan segera melakukan resepsi khitanan. Silakan berikan doa dan harapan untuk Arvin Zahair Ramadhan" />
+    <meta name="keywords" content="khitanan Arvin Zahair Ramadhan, Khitan Online, khitanan, Khitan Arvin Zahair Ramadhan" />
+    <meta name="language" content="in,en" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="google-site-verification" content="qcKcc9CU_-SX2hZoCUN7_MlGNoY72kZgnD-GMzX59oI" />
+    <meta name="revisit-after" content="20 minutes" />
+    <meta name="expires" content="never" />
+    <meta name="verifikasi" content="27nicrz043" />
+    <meta name="title" property="og:title" content="Website Khitan Arvin Zahair Ramadhan" />
+    <meta name="keywords" content="khitanan Arvin Zahair Ramadhan, Khitan Online, khitanan, Khitan Arvin Zahair Ramadhan,Khitanan" />
+    <meta name="description" property="og:description" content="Website ini merupakan website Khitan Arvin Zahair Ramadhan yang akan segera melakukan resepsi khitanan. Silakan berikan doa dan harapan untuk Arvin Zahair Ramadhan" />
+    <meta name="image" property="og:image" content="img/photo-8.jpg" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gumby/2.6.0/js/libs/modernizr-2.6.2.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="text/css" href="img/thomas-icon.jpg">
+
+    <title>Website Khitan Arvin Zahair Ramadhan</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand fonts" href="#mempelai">Arvin Zahair Ramadhan</a>
+                <a class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" onClick="music();" href="#profile">Profile</a>
+                        <a class="nav-item nav-link" onClick="music();" href="#undangan">Undangan</a>
+                        <a class="nav-item nav-link" onClick="music();" href="#peta">Lokasi</a>
+                        <a class="nav-item nav-link" onClick="music();" href="#galeri">Galery</a>
+                        <a class="nav-item nav-link" onClick="music();" href="#kado">Kado Khitanan</a>
+                        <a class="nav-item nav-link" onClick="music();" href="#doa">Ucapan</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        body {
+            overflow: scroll;
+        }
+    </style>
+
+    <script>
+        const queryString = window.location.search;
+
+        const urlParams = new URLSearchParams(queryString);
+
+        const namePerson = urlParams.get('to');
+
+        console.log(namePerson);
+
+
+        function music() {
+            $(".navbar").css("display", "block");
+            $(".button-menu").css("display", "block");
+            $("#mute").css("display", "block");
+            $("body").css("overflow", "auto");
+            $("body").css("height", "auto");
+            var myAudio = $("#audio")[0];
+            if (myAudio.duration > 0 && !myAudio.paused) {} else myAudio.play();
+        }
+    </script>
+    <audio id="audio" style="width:0px; height:0px;"><source src="audio/member-1.mp3" type="audio/mpeg"></audio>
+
+    <section class="py-5 hero-1 bg-light" id="home">
+        <div class="container d-flex justify-content-center">
+            <div class="col-lg-8 py-5 bg-white text-center">
+                <div class="mt-5 mb-3">
+                    <img src="img/thomas.jpg" class="her mb-4">
+                    <h5 class="mb-0 text-secondary">Syukuran Khitanan</h5>
+                    <h1 class="mb-3 text-black" data-aos="fade-up">Arvin Zahair Ramadhan</h1>
+                    <h5 class="mb-0 text-secondary">Minggu, 03 Juli 2022 </h5>
+                </div>
+                <small class="text-black" fadeInUp wow>Untuk</small>
+                <h6 class="my-3" fadeInUp wow style="color: #000000;" id="forPerson"></h6>
+                <!-- <div class="text-black" fadeInUp wow>di Bandung</div> -->
+                <div class="btn-undangan">
+                    <a href="#profile" class="btn btn-primary mt-5" onClick="music();">Buka Undangan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="profile">
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-4 col-md-7 text-center">
+                <h3 class="text-black">Assalamu'alaikum Wr Wb</h3>
+                Dengan Rahmat Allah yang Maha Kuasa Insha Allah kami akan melangsungkan Syukuran Khitan
+                <h5 class="mb-0 text-black my-3" id="demo"></h5>
+                di Gedung Serba Guna RW 06 Jln. Flamboyan Perumahan Ciampea Asri 5
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card text-center p-3">
+                        <div class="text-center">
+                            <img src="img/3.jpeg" class="img-fluid w-50 rounded-circle">
+                        </div>
+                        <h5 class="text-black mt-4">Arvin Zahair Ramadhan</h5>
+                        <p>Putra dari Wasino dan Anis</p>
+                        <p>Arvin Zahair Ramadhan merupakan anak kedua kami. Usianya menginjak kepada yang maha kuasa serta berharap bahwa anak kami kelak menjadi anak yang bermanfaat bagi dirinya, agama, dan bangsa Indonesia.&nbsp;</p> 11 tahun. Dan akan
+                        segera melaksanakan khitan. Maka dari itu, kami ingin mengadakan syukuran atas acara tersebut dengan tujuan memanjatkan rasa terima kasih kami
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="undangan">
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-4 col-md-7 text-center">
+                <h3 class="text-black">Undangan dan Acara</h3>
+                Bahagia rasanya apabila anda berkenan hadir dan memberikan doa
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center mt-4">
+            <div class="row col-lg-8">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 card bg-white text-center radius-10">
+                        <h6 class="mb-0">Syukuran Khitanan</h6>
+                        <hr class="my-4">
+                        <h5 class="mb-0 text-black">09:00 - 17:00 WIB</h5>
+                        <div>Minggu 03 Juli 2022 </div>
+                        <div class="mt-4">Gedung Serba Guna RW 06 Jln. Flamboyan Perumahan Ciampea Asri 5</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 card bg-white text-center radius-10">
+                        <h6 class="mb-0">Turut Mengundang</h6>
+                        <hr class="my-4">
+                        <div>
+                            <p>1. Inda Novera (Kakak)<br /> 2. Eva Veny (Bibi)<br /> 3. Sutrizman (Paman)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 card bg-white text-center radius-10">
+                        <h6 class="mb-0">Catatan</h6>
+                        <hr class="my-4">
+                        <div>
+                            <p>Mohon datang dengan menerapkan protokol kesehatan ya. Kami menunggu kedatangan teman-teman tercinta.&nbsp;Terima kasih.&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="peta">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h3 class="text-black">Peta Lokasi</h3>
+                <p>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau klik tombol di bawah ini</p>
+                <a href="https://maps.app.goo.gl/u26n2CLuaa1BK32s5" class="btn btn-primary">Buka Di Google Maps</a>
+            </div>
+        </div>
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-7 col-md-8">
+                <div class="p-3 bg-white text-center  radius-10 card-undangan" id="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="600" height="500" style="width:100%; height:500px;" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!4v1655563187956!6m8!1m7!1sxuyUHabEZcM7OVLX_7ICjA!2m2!1d-6.551145240463665!2d106.6968934378951!3f133.46!4f17.299999999999997!5f0.7820865974627469"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://getasearch.com/nordvpn-coupon/"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 500px;
+                                    width: 100%;
+                                }
+                            </style>
+                            <a href="https://www.embedgooglemap.net"></a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none!important;
+                                    height: 500px;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light" id="galeri">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h3 class="text-black">Galeri Foto</h3>
+                <p>Sekilas foto-foto bahagia</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/2.jpeg" class="img-fluid w-100 radius-10" alt="img/2.jpeg">
+                    </div>
+                    <div class="bottom-left"><strong> we'll move to thomas</strong></div>
+                </div>
+                <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/3.jpeg" class="img-fluid w-100 radius-10" alt="img/3.jpeg">
+                    </div>
+                    <div class="bottom-left"><strong>I love the milky way</strong></div>
+                </div>
+                <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/4.jpeg" class="img-fluid w-100 radius-10" alt="img/4.jpeg">
+                    </div>
+                    <div class="bottom-left"><strong> thomas</strong></div>
+                </div>
+                <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/5.jpeg" class="img-fluid w-100 radius-10" alt="img/5.jpeg">
+                    </div>
+                    <div class="bottom-left"><strong>Foto bareng thomas</strong></div>
+                </div>
+                <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/6.jpeg" class="img-fluid w-100 radius-10" alt="img/6.jpeg">
+                    </div>
+                    <div class="bottom-left"><strong>Take a smile :)</strong></div>
+                </div>
+                <!-- <div class="col-lg-4 mb-4 col-md-6">
+                    <div class="bg-light text-center radius-10 card-undangan">
+                        <img src="img/photo-7.jpg" class="img-fluid w-100 radius-10" alt="img/photo-7.jpg">
+                    </div>
+                    <div class="bottom-left"><strong>Little Astronaut</strong></div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="peta">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h3 class="text-black">Galeri Video</h3>
+                <p>Video Kebahagian yang ingin dibagikan</p>
+            </div>
+        </div>
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-7 col-md-8">
+                <div class="card p-3 bg-white text-center radius-10 card-undangan">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D8FPyzy6w2Y" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 mb-5" id="kado">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h2 class="text-black">Kado Khitan</h2>
+                <div>Terima kasih atas doa yang telah anda berikan, jika anda ingin mengirimkan kado khitanan, silahkan kirim dengan cara dibawah ini. Terima kasih.</div>
+            </div>
+        </div>
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-4 col-md-8">
+                <div class="p-4 bg-light text-center radius-10 card-undangan">
+                    <img src="img/barcode.png" class="img-fluid w-100 radius-10" alt="">
+
+                </div>
+                <p>
+                    <p>Jika teman-teman ada yang berkenan untuk mengirimkan tanda kasih kepada anak kami Arvin Zahair Ramadhan, silakan kirim melalui&nbsp;rekening bank bca 5320207420 atas nama Dhety Agustini atau dengan&nbsp;scan kode QR di atas.</p>
+
+                    <p>Atau jika berkenan mengirimkan hadiah berupa kado fisik, anda dapat mengirimkannya pada alamat rumah kami di Gedung Serba Guna RW 06 Jln. Flamboyan Perumahan Ciampea Asri</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>Terima kasih,</p>
+
+                    <p>~ Niswa &amp; Family</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 mb-5" id="doa">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h2 class="text-black">Doa Dan Ucapan</h2>
+                <div>Tuliskan sesuatu ucapan berupa harapan ataupun doa</div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-7 col-md-8">
+                <div class="p-4 bg-light text-center radius-10 card-undangan">
+                    <!-- <form action="#" method="POST" autocomplete="off">
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input type="text" id="nama" class="form-control" name="nama" placeholder="Tulis nama lengkap anda" required="required">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Tulis alamat email anda (optional)">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" id="handphone" class="form-control" name="handphone" placeholder="Tulis nomor handphone anda (optional)">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Tulis alamat tinggal anda (optional)">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <textarea id="doa" name="doa" class="form-control" cols="30" rows="10" placeholder="Tuliskan ucapan atau doa untuk mempelai khitan" required="required"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div id="submitMessage"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="text-left">
+                                    <label for="" class="">Apakah anda akan hadir memenuhi undangan saya?</label>
+                                </div>
+                                <div class="form-check text-left">
+                                    <input class="form-check-input" type="radio" name="hadir" id="exampleRadios1" value="1" nam checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                          Saya Akan hadir
+                        </label>
+                                </div>
+                                <div class="form-check text-left">
+                                    <input class="form-check-input" type="radio" name="hadir" id="exampleRadios2" value="2" nam>
+                                    <label class="form-check-label" for="exampleRadios2">
+                          Saya Tidak Akan hadir
+                        </label>
+                                </div>
+                                <button type="submit" type="submit" id="rsvp-form-submit" value="Kirim Doa dan Ucapan" class="btn btn-primary btn-block py-2 mt-4">KIRIM</button>
+                            </div>
+                            <input type="hidden" name="submit">
+                        </div>
+                    </form> -->
+                    <a href=""> <i class="fas fa-whatsapp"></i> Hadir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="py-5 mb-lg-0 mb-5 bg-light" id="doa">
+        <div class="container text-center mt-5 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <h2 style="color: #ffffff;">Doa Dan Ucapan</h2>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">Asti - Jakarta</h6>
+                        <hr class="my-4">Wilujeng de Niswa. Mudah-mudahan segala yang dimaksud tercapai. Aamiin...
+                        <div class="mt-4">Senin, 10 Januari 2022 09:27 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">Fitri - Jakarta</h6>
+                        <hr class="my-4">Syukur alhamdulillah yo de Niswa. Insha Alloh Hadir.
+                        <div class="mt-4">Senin, 10 Januari 2022 09:38 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">Iqbal - Pangandaran</h6>
+                        <hr class="my-4">Selamat Niswa
+                        <div class="mt-4">Sabtu, 19 Februari 2022 10:43 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">aca - bandung</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Kamis, 12 Mei 2022 13:50 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">awa - bie</h6>
+                        <hr class="my-4">sdh
+                        <div class="mt-4">Kamis, 12 Mei 2022 14:18 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">putri - bandung</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Kamis, 12 Mei 2022 14:54 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">nata - sukabumi</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Jum'at, 13 Mei 2022 14:28 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">nani - papua</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Jum'at, 13 Mei 2022 14:55 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">tuti - bandung</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Sabtu, 14 Mei 2022 10:09 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">tes - tes</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Senin, 16 Mei 2022 21:20 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" style="color:#000000;">
+                    <div class="p-4 bg-white text-center radius-10 card-undangan">
+                        <h6 class="mb-0">asa - bandung</h6>
+                        <hr class="my-4">selamat
+                        <div class="mt-4">Sabtu, 11 Juni 2022 13:25 WIB </div>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-5">
+            <div class="text-center">
+                <h2 style="color: #ffffff;">Protokol Kesehatan</h2>
+                <div>Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke acara untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</div>
+            </div>
+            <hr class="my-5">
+            <div class="text-center">
+                Website Khitanan Arvin Zahair Ramadhan ini dibuat oleh toniyansyah4
+            </div>
+        </div>
+    </section> -->
+
+    <div class="mute btn-primary shadow px-3 py-2" id="mute" onClick="mute();"><i class="fas fa-volume-off"></i></div>
+    <script>
+        function mute() {
+            music();
+            var myAudio = document.getElementById("audio");
+            var mute = document.getElementById("mute");
+            if (myAudio.muted == true) {
+                myAudio.muted = false;
+                mute.innerHTML = '<i class="fas fa-volume-up"></i>';
+            } else if (myAudio.muted == false) {
+                myAudio.muted = true;
+                mute.innerHTML = '<i class="fas fa-volume-off"></i>';
+            }
+        }
+    </script>
+
+    <style>
+        .mute {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        @media (min-width: 992px) {
+            .mute {
+                bottom: 20px;
+            }
+        }
+    </style>
+
+    <div class="button-menu visible-xs shadow-lg py-3 fixed-bottom d-block d-lg-none">
+        <div class="button-menu-item">
+            <a class="text-black text-decoration-none mx-3" href="#profile" onClick="music();">Profile</a>
+            <div>|</div>
+            <a class="text-black text-decoration-none mx-3" href="#undangan" onClick="music();">Undangan</a>
+            <div>|</div>
+            <a class="text-black text-decoration-none mx-3" href="#peta" onClick="music();">Lokasi</a>
+            <div>|</div>
+            <a class="text-black text-decoration-none mx-3" href="#galeri" onClick="music();">Galery</a>
+            <div>|</div>
+            <a class="text-black text-decoration-none mx-3" href="#kado" onClick="music();">Kado Khitanan</a>
+            <div>|</div>
+            <a class="text-black text-decoration-none mx-3" href="#doa" onClick="music();">Ucapan</a>
+        </div>
+    </div>
+
+    <style>
+        .button-menu {
+            background-color: #fff;
+            overflow-x: scroll;
+            display: none;
+            font-style: normal !important;
+        }
+        
+        .button-menu-item {
+            width: 650px;
+        }
+        
+        .button-menu-item div {
+            float: left;
+            text-align: center;
+            font-style: normal !important;
+        }
+        
+        .button-menu-item a {
+            float: left;
+            text-align: center;
+            font-style: normal !important;
+        }
+    </style>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("forPerson").innerHTML = namePerson;
+        // Set the date we're counting down to
+        var countDownDate = new Date("03 July 2022 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "hari " + hours + "jam " +
+                minutes + "menit " + seconds + "detik ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
